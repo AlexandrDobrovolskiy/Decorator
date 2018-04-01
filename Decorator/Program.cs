@@ -6,12 +6,12 @@ namespace Decorator
     {
         static void Main(string[] args)
         {
-            Beverage coffe = new Espresso();
-            coffe = new Milk(coffe);
-            coffe = new Mocha(coffe);
-            coffe = new Whip(coffe);
+            Beverage coffee = new Espresso();
+            coffee = new Milk(coffee);
+            coffee = new Mocha(coffee);
+            coffee = new Whip(coffee);
 
-            Console.WriteLine($"The beverage is {coffe.Description} it's cost is : {coffe.Cost()}$");
+            Console.WriteLine($"The beverage is {coffee.Description} it's cost is : {coffee.Cost()}$");
             Console.ReadKey();
         }
     }
